@@ -52,4 +52,3 @@ response = r.text
 print(data)
 print(r.text)
 print(r.status_code)
-print(2)
