@@ -32,3 +32,4 @@ result1 = r.json()
 print (result1['data'][0]['roomId'])
 
 assert result1['data'][0]['roomId'] == 61
+print ('1')
