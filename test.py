@@ -4,29 +4,6 @@ import requests
 import urllib
 import urllib2
 
-# url = "http://172.16.40.240:8888/sitopeuv/api/user/login.json"
-# headers = {"Content-Type": "application/json"}
-# data = {"userName": "yanxin",
-# 		"userPwd": "123456",}
-# r = requests.post(url=url, json=data, headers=headers)
-# response = r.text
-# print(data)
-# print(r.text)
-# print(r.status_code)
-# print(1)
-#
-# # 断言
-# url = "http://172.16.40.240:8888/sitopeuv/api/role/add.json"
-# headers = {"Content-Type": "application/json"}
-# data = {"roleName": "xuzhen",
-# 		"roleRemark": "123",}
-# r = requests.post(url=url, json=data, headers=headers)
-# response = r.text
-# print(data)
-# print(r.text)
-# print(r.status_code)
-# print(2)
-
 # 第一步先给出账户密码网址准备模拟登录
 postdata = urllib.urlencode({
 	'userName': 'biandongfeng',
