@@ -4,7 +4,7 @@ from public import Login
 import time
 import random
 
-url = "http://172.16.40.240:8888/sitopeuv/message/send/system"
+url = "https://www.ewaypro.cn/euvtest/api/message/send/system.json"
 payload0 = {'messageTitle': '消息规律测试0', 'messageContent': '消息规律测试0', 'messageType':'1'}
 payload1 = {'messageTitle': '消息规律测试1', 'messageContent': '消息规律测试1', 'messageType':'1'}
 payload2 = {'messageTitle': '消息规律测试2', 'messageContent': '消息规律测试2', 'messageType':'1'}
@@ -18,7 +18,6 @@ payload9 = {'messageTitle': '消息规律测试9', 'messageContent': '消息规�
 payload_list = [payload0, payload1, payload2, payload3, payload4, payload5, payload6, payload7, payload8, payload9]
 
 for kk in range(0, 100):
-    time.sleep(600)
     kk = 1
     kk = kk + 1
     print (kk)
@@ -26,6 +25,8 @@ for kk in range(0, 100):
         time.sleep(30)
         r = requests.post(url=url, data=payload_list[i], cookies=Login.myCookies)
         print(r.text)
+    time.sleep(600)
+
 
 # r = requests.get(url=url, cookies=myCookies)
 # result = r.json()

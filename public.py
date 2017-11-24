@@ -10,7 +10,7 @@ class Login:
         pass
 
     post_data = urllib.urlencode({
-        'userName': '15609109999',
+        'userName': '15609100803',
         'userPwd': '123456',
     })
     loginUrl = 'https://www.ewaypro.cn/euvtest/api/user/login.json'
